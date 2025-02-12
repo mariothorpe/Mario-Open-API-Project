@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,32 +9,23 @@
 <body>
     <nav>
         <div class="nav-left">
-
+            <img src="./marvel_image.jpeg" alt>
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="button-container">
+            <button onclick="renderData()">Get Random Character</button>
+        </div>
     </nav>
     <main>
-        <h1>Marvel Character Generator</h1>
-        <div id="character-container">
-            <img src="">
-        </div>
-    </main>
+        <h1>Marvel Character Generator</h1>        
+    </main>   
     <div class="container">
-
+        <div id="characterCard" class="card" style="display: none;">
+            <h2 id="characterName"></h2>
+            <img id="characterPortrait" src=""/>
+            <p id="characterDescription"></p>
+            <h3 id="characterComics"></h3>    
+        </div>
     </div>
-    <section id="Search">
-        <h1>Character Search</h1>
-        <form id="search-form">
-            <input type="text" id="search-input" placeholder="Enter a character name">
-            <button id="search-btn">Search</button>
-        </form>
-
-    </section>
-
     <script src="JS/index.js"></script>   
 </body>
 </html>
